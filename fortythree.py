@@ -2,17 +2,16 @@
 
 def palindrome(n):
     x=n
-  
-    rem=0
+    rev=0
     while(x>0):
-        rev=x%10
-        rem=rev*10+rem
+        rem=x%10
+        rev=(rev*10)+rem
         x=x//10
-
-
-
-
-
-
+    
+    if n==rev:
+        print("The number is Palindrome number")
+    else:
+        print("The number is not palindrome")
 
 n=int(input("Enter the number: "))
+palindrome(n)
