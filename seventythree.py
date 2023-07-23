@@ -3,4 +3,5 @@
 fhandone=open('seventythreefileone.txt','r')
 fhandtwo=open('seventythreefiletwo.txt','r')
 
-
+for lineone,linetwo in zip(fhandone,fhandtwo):
+    print(lineone+linetwo)
